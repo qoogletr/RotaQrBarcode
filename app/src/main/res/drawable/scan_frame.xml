@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Tarama çerçevesi için şeffaf arka plan -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke android:color="@color/scan_frame_border" android:width="1dp" />
+        </shape>
+    </item>
+    
+    <!-- Sol Üst Köşe -->
+    <item android:left="0dp" android:top="0dp">
+        <shape android:shape="rectangle">
+            <size android:width="@dimen/scan_frame_corner_size" android:height="@dimen/scan_frame_corner_thickness" />
+            <solid android:color="@color/scan_frame_corner" />
+        </shape>
+    </item>
+    <item android:left="0dp" android:top="0dp">
+        <shape android:shape="rectangle">
+            <size android:width="@dimen/scan_frame_corner_thickness" android:height="@dimen/scan_frame_corner_size" />
+            <solid android:color="@color/scan_frame_corner" />
+        </shape>
+    </item>
+    
+    <!-- Sağ Üst Köşe -->
+    <item android:right="0dp" android:top="0dp" android:gravity="right">
+        <shape android:shape="rectangle">
+            <size android:width="@dimen/scan_frame_corner_size" android:height="@dimen/scan_frame_corner_thickness" />
+            <solid android:color="@color/scan_frame_corner" />
+        </shape>
+    </item>
+    <item android:right="0dp" android:top="0dp" android:gravity="right">
+        <shape android:shape="rectangle">
+            <size android:width="@dimen/scan_frame_corner_thickness" android:height="@dimen/scan_frame_corner_size" />
+            <solid android:color="@color/scan_frame_corner" />
+        </shape>
+    </item>
+    
+    <!-- Sol Alt Köşe -->
+    <item android:left="0dp" android:bottom="0dp" android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <size android:width="@dimen/scan_frame_corner_size" android:height="@dimen/scan_frame_corner_thickness" />
+            <solid android:color="@color/scan_frame_corner" />
+        </shape>
+    </item>
+    <item android:left="0dp" android:bottom="0dp" android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <size android:width="@dimen/scan_frame_corner_thickness" android:height="@dimen/scan_frame_corner_size" />
+            <solid android:color="@color/scan_frame_corner" />
+        </shape>
+    </item>
+    
+    <!-- Sağ Alt Köşe -->
+    <item android:right="0dp" android:bottom="0dp" android:gravity="right|bottom">
+        <shape android:shape="rectangle">
+            <size android:width="@dimen/scan_frame_corner_size" android:height="@dimen/scan_frame_corner_thickness" />
+            <solid android:color="@color/scan_frame_corner" />
+        </shape>
+    </item>
+    <item android:right="0dp" android:bottom="0dp" android:gravity="right|bottom">
+        <shape android:shape="rectangle">
+            <size android:width="@dimen/scan_frame_corner_thickness" android:height="@dimen/scan_frame_corner_size" />
+            <solid android:color="@color/scan_frame_corner" />
+        </shape>
+    </item>
+</layer-list>
